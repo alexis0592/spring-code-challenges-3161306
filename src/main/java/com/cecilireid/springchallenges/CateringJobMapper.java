@@ -2,9 +2,10 @@ package com.cecilireid.springchallenges;
 
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.FieldSet;
+import org.springframework.stereotype.Component;
 import org.springframework.validation.BindException;
 
-
+@Component
 public class CateringJobMapper implements FieldSetMapper<CateringJob> {
     @Override
     public CateringJob mapFieldSet(FieldSet fieldSet) throws BindException {
